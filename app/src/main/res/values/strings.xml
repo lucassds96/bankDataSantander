@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BankDataSantander</string>
+    <string name="invalid_password">Senha invalida</string>
+    <string name="invalid_user">usuario incorreto</string>
+    <string name="account_client">conta</string>
+    <string name="value_account">saldo</string>
+    <string name="recent">recentes</string>
+    <string name="hitn_user">user</string>
+    <string name="hint_password_field">senha</string>
+    <string name="title_bt_login">login</string>
+</resources>
