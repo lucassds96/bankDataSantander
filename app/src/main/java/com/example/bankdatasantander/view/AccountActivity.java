@@ -48,7 +48,7 @@ public class AccountActivity extends AppCompatActivity {
 
         clientName.setText(loginResponse.getClientData().getName());
         account.setText(loginResponse.getClientData().getBankAccount() + getString(R.string.separator_account)
-                + loginResponse.getClientData().getAgency());
+                + formatAccount(loginResponse.getClientData().getAgency()));
         balance.setText(getString(R.string.real_string) + loginResponse.getClientData()
                 .getBalance().toString());
     }
@@ -81,5 +81,13 @@ public class AccountActivity extends AppCompatActivity {
 
         AccountListAdapter accountListAdapter = new AccountListAdapter(accountInfos);
         mRecyclerView.setAdapter(accountListAdapter);
+    }
+
+    private String formatAccount(String account){
+        if(account.length() == 9){
+            account = account.substring(0,2) + "." +account.substring(2,8) +
+            "-" + account.substring(8,9);
+        }
+        return account;
     }
 }
