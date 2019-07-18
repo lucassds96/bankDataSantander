@@ -6,7 +6,7 @@ import android.arch.lifecycle.MutableLiveData;
 
 import com.example.bankdatasantander.model.AccountInfo;
 import com.example.bankdatasantander.model.AccountInfoResponse;
-import com.example.bankdatasantander.model.BankViewModel;
+import com.example.bankdatasantander.viewmodel.BankViewModel;
 import com.example.bankdatasantander.model.ClientData;
 import com.example.bankdatasantander.model.Login;
 import com.example.bankdatasantander.model.LoginResponse;

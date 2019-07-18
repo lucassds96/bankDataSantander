@@ -1,4 +1,4 @@
-package com.example.bankdatasantander.data;
+package com.example.bankdatasantander.data.local.dao;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;

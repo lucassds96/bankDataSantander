@@ -1,4 +1,4 @@
-package com.example.bankdatasantander.activity;
+package com.example.bankdatasantander.view;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -13,8 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.bankdatasantander.R;
-import com.example.bankdatasantander.activity.AccountActivity;
-import com.example.bankdatasantander.model.BankViewModel;
+import com.example.bankdatasantander.viewmodel.BankViewModel;
 import com.example.bankdatasantander.model.Login;
 import com.example.bankdatasantander.model.LoginResponse;
 

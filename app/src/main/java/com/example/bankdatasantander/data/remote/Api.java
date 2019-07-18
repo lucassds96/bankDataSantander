@@ -1,4 +1,4 @@
-package com.example.bankdatasantander.data;
+package com.example.bankdatasantander.data.remote;
 
 import com.example.bankdatasantander.model.AccountInfoResponse;
 import com.example.bankdatasantander.model.Login;

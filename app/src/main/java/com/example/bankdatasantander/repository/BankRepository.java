@@ -3,11 +3,11 @@ package com.example.bankdatasantander.repository;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 
-import com.example.bankdatasantander.data.Api;
-import com.example.bankdatasantander.data.AppDataBase;
+import com.example.bankdatasantander.data.remote.Api;
+import com.example.bankdatasantander.data.local.AppDataBase;
 import com.example.bankdatasantander.model.AccountInfoResponse;
 import com.example.bankdatasantander.model.Login;
-import com.example.bankdatasantander.data.RetrofitDataClient;
+import com.example.bankdatasantander.data.remote.RetrofitDataClient;
 import com.example.bankdatasantander.model.LoginResponse;
 
 import retrofit2.Call;

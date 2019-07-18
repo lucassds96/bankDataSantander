@@ -1,4 +1,4 @@
-package com.example.bankdatasantander.activity;
+package com.example.bankdatasantander.view;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -15,7 +15,7 @@ import com.example.bankdatasantander.R;
 import com.example.bankdatasantander.adapter.AccountListAdapter;
 import com.example.bankdatasantander.model.AccountInfo;
 import com.example.bankdatasantander.model.AccountInfoResponse;
-import com.example.bankdatasantander.model.BankViewModel;
+import com.example.bankdatasantander.viewmodel.BankViewModel;
 import com.example.bankdatasantander.model.LoginResponse;
 
 import java.util.List;
@@ -47,8 +47,10 @@ public class AccountActivity extends AppCompatActivity {
         TextView balance = findViewById(R.id.balance);
 
         clientName.setText(loginResponse.getClientData().getName());
-        account.setText(loginResponse.getClientData().getBankAccount() + "/" + loginResponse.getClientData().getAgency());
-        balance.setText("R$" + loginResponse.getClientData().getBalance().toString());
+        account.setText(loginResponse.getClientData().getBankAccount() + getString(R.string.separator_account)
+                + loginResponse.getClientData().getAgency());
+        balance.setText(getString(R.string.real_string) + loginResponse.getClientData()
+                .getBalance().toString());
     }
 
     private void accountInfo() {

@@ -8,4 +8,6 @@
     <string name="hitn_user">user</string>
     <string name="hint_password_field">senha</string>
     <string name="title_bt_login">login</string>
+    <string name="real_string">R$</string>
+    <string name="separator_account">\u0020/\u0020</string>
 </resources>

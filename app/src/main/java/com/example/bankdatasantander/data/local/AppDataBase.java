@@ -1,4 +1,4 @@
-package com.example.bankdatasantander.data;
+package com.example.bankdatasantander.data.local;
 
 import android.arch.persistence.room.Database;
 
@@ -6,6 +6,7 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
+import com.example.bankdatasantander.data.local.dao.LoginDao;
 import com.example.bankdatasantander.model.Login;
 
 @Database(entities = {Login.class}, version = 1, exportSchema = false)

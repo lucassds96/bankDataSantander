@@ -1,11 +1,14 @@
-package com.example.bankdatasantander.model;
+package com.example.bankdatasantander.viewmodel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
-import com.example.bankdatasantander.data.AppDataBase;
+import com.example.bankdatasantander.data.local.AppDataBase;
+import com.example.bankdatasantander.model.AccountInfoResponse;
+import com.example.bankdatasantander.model.Login;
+import com.example.bankdatasantander.model.LoginResponse;
 import com.example.bankdatasantander.repository.BankRepository;
 
 import java.util.regex.Matcher;

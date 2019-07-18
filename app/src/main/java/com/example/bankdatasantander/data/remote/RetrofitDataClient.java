@@ -1,4 +1,4 @@
-package com.example.bankdatasantander.data;
+package com.example.bankdatasantander.data.remote;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
